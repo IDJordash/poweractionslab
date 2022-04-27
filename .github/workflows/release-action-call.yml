@@ -1,0 +1,21 @@
+name: Release action
+# Call the reusable workflow release-solution-with-inputs.yml
+# Release your solution to stage when you create a new release.
+
+on:
+  release:
+      types: [created]        
+
+jobs:
+  Release-solution-EPAMSolution:
+    uses: ./.github/workflows/release-solution-with-inputs.yml
+    with:
+      #You can specify the solution name here
+      solution_name: EPAMSolution
+      #Update your values here
+      BUILD_ENVIRONMENT_URL: 'https://npc980.crm4.dynamics.com/'
+      PRODUCTION_ENVIRONMENT_URL: 'https://npc981.crm4.dynamics.com/'
+      CLIENT_ID: '376269e8-f598-4607-820f-7768b6c18062'
+      TENANT_ID: '9677486e-b1e4-4cdb-ac0b-7e97e0466740'     
+    secrets:
+      envSecret: ${{ secrets.PowerPlatformSPN }}
