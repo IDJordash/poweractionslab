@@ -13,8 +13,8 @@ jobs:
       #You can specify the solution name here
       solution_name: EPAMSolution
       #Update your values here
-      BUILD_ENVIRONMENT_URL: 'https://npc980.crm4.dynamics.com/'
-      PRODUCTION_ENVIRONMENT_URL: 'https://npc981.crm4.dynamics.com/'
+      BUILD_ENVIRONMENT_URL: 'https://npc981.crm4.dynamics.com/'
+      PRODUCTION_ENVIRONMENT_URL: 'https://npc982.crm4.dynamics.com/'
       CLIENT_ID: '376269e8-f598-4607-820f-7768b6c18062'
       TENANT_ID: '9677486e-b1e4-4cdb-ac0b-7e97e0466740'     
     secrets:
