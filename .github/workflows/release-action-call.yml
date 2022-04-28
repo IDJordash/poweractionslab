@@ -1,5 +1,5 @@
 name: Release action
-# Call the reusable workflow release-solution-with-inputs.yml
+# Call the reusable workflow release-solution-to-prod-with-inputs.yml
 # Release your solution to stage when you create a new release.
 
 on:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   Release-solution-EPAMSolution:
-    uses: ./.github/workflows/release-solution-with-inputs.yml
+    uses: ./.github/workflows/release-solution-to-prod-with-inputs.yml
     with:
       #You can specify the solution name here
       solution_name: EPAMSolution
